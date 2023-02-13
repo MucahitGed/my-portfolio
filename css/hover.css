@@ -1,0 +1,132 @@
+.submitBtn{
+    align-self: flex-start;
+    height: 5;
+    height: 5rem;
+    width: 30%;
+}
+ .animated-button.thar-three {
+     color: #fff;
+     cursor: pointer;
+     display: block;
+     position: relative;
+     border: 2px solid var(--blue);
+     color: var(--blue);
+     font-size: 1.6rem;
+     font-weight: 600;
+     letter-spacing: 2px;
+     background-color: var(--background);
+     transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+
+ }
+ .animated-button.thar-three:hover {
+     color: var(--background) !important;
+     background-color: transparent;
+     text-shadow: nthree;
+ }
+ .animated-button.thar-three:hover:before {
+     left: 0%;
+     right: auto;
+     width: 100%;
+ }
+ .animated-button.thar-three:before {
+     display: block;
+     position: absolute;
+     top: 0px;
+     right: 0px;
+     height: 100%;
+     width: 0px;
+     z-index: -1;
+     content: '';
+     color: var(--background) !important;
+     background: var(--blue);
+     transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+ 
+ }
+ .content{
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .content:after {
+    content: "";
+    background-color: var(--blue);
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 10px;
+    left: 10px;
+    transition: 0.2s;
+  }
+  .content:hover img{
+    height: 70%;
+  }
+  .content:hover:after {
+    top: 0px;
+    left: 0px;
+  }
+  
+  /*  */
+  /* nav {
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 50px 0;
+    box-shadow: 0px 5px 0px #dedede;
+  }
+  nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+  }
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+  }
+  nav ul li a:hover {
+    color: #555;
+  }
+  
+  
+  /* stroke */
+  /* nav.stroke ul li a,
+  nav.fill ul li a {
+    position: relative;
+  }
+  nav.stroke ul li a:after,
+  nav.fill ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+  }
+  nav.stroke ul li a:hover:after {
+    width: 100%;
+  }  */
